@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Blinkayles by Ben Zurkow
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+I've done my best to comment what I've done throughout my code. However, there are a few key points I'd like to bring up right here about my motiviations for how I approached this project. The first is that I wanted to make something playable - even fun. While there are certainly improvements I could have made to my web interface, I hope that it can be enjoyed. The second, and probably more important motif, was my desire to restructure the game mechanics. Rather than build the game around a set of pins, I decided to build the game around a set of moves. While I am sure there are optimization improvements to be made, I see keeping track of the state of the pins as an extra step that is unnecessary to determining game status or the game winner. If we want to see the state of the pins, we can determine them from our moves. This is different than keeping track of pins and necessarily needing to determine moves off of them.
 
-### `npm start`
+## Running my code
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+NOTE: Because I put this up on the internet I wanted to adhere to the privacy wishes expressed in the project parameters. So, I implemented a very basic password gate. The password is "alohomora"
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+To play go to blinkayles.com or https://intense-atoll-38339.herokuapp.com
 
-### `npm test`
+Or
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Yarn Install
+Yarn Build
+Yarn Start
+Go to: http://localhost:8080
 
-### `npm run build`
+## Reading my code
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There are three types of simulations in my application: single Game, multiple games and tournament. The front end is designed to get game parameters and send them to the server to calculate. The best places to start reading my code for both front end and backend are:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Front-End: src/index.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Back-End: serverStart.js

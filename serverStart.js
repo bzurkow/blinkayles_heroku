@@ -1,3 +1,12 @@
+/*
+This is where the express server starts. There's nothing fancy here, but I am drawing in functions and handlers from my "server" directory.
+
+server/auth.js contains the basic password gate
+server/functions.js contains all of my game functions. I decided it was easier to keep all of the functions together since, while each game function is different, they rely on many of the same helper functions.
+
+*/
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');

@@ -1,4 +1,13 @@
-//import React from 'react';
+/*
+
+I've set my app up with react, redux and react-router.
+
+I only use redux for my basic auth gate, but it was nice to put in regardless.
+
+I've tried to include a little bit of everything in this app, be it react, redux, react-router, material-ui, axios, etc. I'm looking forward to talking through everything!
+
+*/
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router-dom';
@@ -34,6 +43,8 @@ class App extends Component {
   }
 }
 
+
+// Questrial is what Blink Health uses, so I used it.
 const styles = {
   all: {
     fontFamily: 'Questrial, sans-serif'
